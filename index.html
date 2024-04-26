@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메디커넥</title>
+    <!-- font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 제이쿼리 라이브러리 필수 cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/logo.png" alt="메디커넥"></a>
+        <a href="#" class="home"><img src="./images/icon_home.png" alt="홈으로 바로가기"></a>
+    </header>
+    <main>
+        <h2>임플란트 추천 병원</h2>
+        <div class="container">
+            <div class="swiper" id="main_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <img src="./images/slide_01.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img src="./images/slide_02.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <img src="./images/slide_03.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <img src="./images/slide_04.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <img src="./images/slide_05.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide6">
+                        <img src="./images/slide_01.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide7">
+                        <img src="./images/slide_02.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const swiper = new Swiper("#main_slide", {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true},
+        autoplay: {
+        delay: 1500,},
+        centeredSlides: false,
+        loop: true,
+        effect: 'slide', // 슬라이드 효과 선택 ('slide'는 기본값)
+        speed: 700, // 슬라이드 전환 속도 (밀리초)
+        })
+    </script>
+</body>
+</html>
