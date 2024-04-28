@@ -76,6 +76,80 @@ body {
             }
         }
     }
+    .pop_up_bg {
+        width: 500px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3333333333);
+        backdrop-filter: blur(10px);
+        .pop_up1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 440px;
+            width: 90%;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 64px 32px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            border-radius: 32px;
+            .logo {
+                img {}
+            }
+            .txt_box {
+                padding: 20px 0;
+                p {
+                    text-align: center;
+                    font-size: 0.813rem;
+                    padding-bottom: 7px;
+                }
+            }
+            .link {
+                display: flex;
+                flex-flow: column;
+                :nth-child(1) {
+                    background: -webkit-gradient(linear, left top, right top, from(#aeaeae), to(#8d8d8d));
+                    margin-bottom: 10px;
+                    padding: 17px 0;
+                }
+                :nth-child(2) {
+                    border: 1px solid #8d8d8d;
+                    background-color: #fff;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 70px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        .pop_up2 {
+            .top {
+                img {}
+            }
+            .txt {
+                p {
+                    em {}
+                }
+            }
+            .button {
+                a {}
+                .submit {}
+                .reset {}
+            }
+        }
+    }
 }
 
 @keyframes active {
