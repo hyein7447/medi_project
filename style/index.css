@@ -54,8 +54,7 @@ body main .container #main_slide .swiper-wrapper .slide7 {
   margin-right: 100px;
 }
 body main .container #main_slide .swiper-wrapper .swiper-slide-active {
-  width: 370px;
-  height: 490px;
+  width: 19% !important;
 }
 body .pop_up_bg {
   width: 500px;
