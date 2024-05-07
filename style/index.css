@@ -94,6 +94,7 @@ body .container main .contents #main_slide .swiper-wrapper .swiper-slide img {
 }
 body .container main .contents #main_slide .swiper-wrapper .swiper-slide-active {
   transform: scale(1.2);
+  transition: 1s ease;
 }
 body .container .pop_up_bg {
   width: 500px;
