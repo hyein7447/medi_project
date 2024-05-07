@@ -250,6 +250,7 @@ body .bg_right {
   height: 100vh;
   position: absolute;
   right: 0;
+  top: 0;
 }
 body .bg_right .person {
   position: absolute;
