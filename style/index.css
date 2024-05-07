@@ -75,7 +75,7 @@ body .container main h2 {
 }
 body .container main .contents #main_slide {
   margin: 50px 0;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 body .container main .contents #main_slide .swiper-wrapper {
   display: flex;
@@ -91,12 +91,6 @@ body .container main .contents #main_slide .swiper-wrapper .swiper-slide img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-body .container main .contents #main_slide .swiper-wrapper .slide7 {
-  margin-right: 100px;
-}
-body .container main .contents #main_slide .swiper-wrapper .slide7 img {
-  width: 100%;
 }
 body .container main .contents #main_slide .swiper-wrapper .swiper-slide-active {
   transform: scale(1.2);
